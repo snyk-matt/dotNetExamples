@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>netstandard2.0;net452;net461</TargetFrameworks>
+    <PackageId>project</PackageId>
+  </PropertyGroup>
+
+ <ItemGroup Condition="'$(TargetFramework)' == 'netstandard2.0'">
+    <PackageReference Include="System.Configuration" Version="2.0.5" />
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="4.4.0" />
+    <PackageReference Include="System.Diagnostics.Tracing" Version="4.3.0" />
+    <PackageReference Include="System.Diagnostics.TraceSource" Version="4.3.0" />
+    <PackageReference Include="System.Diagnostics.TextWriterTraceListener" Version="4.3.0" />
+    <PackageReference Include="System.IO.FileSystem.Watcher" Version="4.3.0" />
+    <PackageReference Include="System.Collections.NonGeneric" Version="4.3.0" />
+    <PackageReference Include="System.Security.Principal" Version="4.3.0" />
+    <PackageReference Include="System.Security.Principal.Windows" Version="4.4.0" />
+    <PackageReference Include="System.Security.Permissions" Version="4.4.0" />
+ </ItemGroup>
+
+</Project>
